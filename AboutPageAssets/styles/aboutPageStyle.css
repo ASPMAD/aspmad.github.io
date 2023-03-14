@@ -200,7 +200,7 @@ header .socialNetworkNavBar img:hover {
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover,
   .next:hover {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.5);
   }
   
   /* Number text (1/3 etc) */
@@ -208,7 +208,7 @@ header .socialNetworkNavBar img:hover {
 	color: #f2f2f2;
 	font-size: 12px;
 	padding: 8px 12px;
-	position: absolute;
+	position: relative;
 	top: 0;
   }
   
