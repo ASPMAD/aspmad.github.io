@@ -37,7 +37,7 @@
     <!-- slide journal -->
     <section class="slide">
         <h2 style="text-align:center">Rapport annuel 2022</h2>
-        <div class="container">
+        <div class="container" id="zoom">
             <div class="mySlides">
                 <div class="numbertext">1 / 28</div>
                 <img src="../AboutPageAssets/img/1.jpg" style="width:100%" alt="page 1">
@@ -249,7 +249,7 @@
             dots[slideIndex - 1].className += " active";
             captionText.innerHTML = dots[slideIndex - 1].alt;
          }
-           
+           // crer des bulle info sur les petites images. contenu titres des pages
             var tooltip = document.querySelector('.tooltip');
             var tooltipContent = tooltip.querySelector('.tooltiptext');
             tooltip.addEventListener('mouseover', function() {
@@ -257,6 +257,16 @@
             });
             tooltip.addEventListener('mouseout', function() {
             tooltipContent.style.display = 'none';
+            });
+        // créer un zoom sur les slide 
+         const element = document.getElementById("zoom");
+
+            element.addEventListener("mouseover", function() {
+            this.style.transform = "scale(1.2)";
+            });
+
+            element.addEventListener("mouseout", function() {
+            this.style.transform = "scale(1)";
             });
     </script>
 
