@@ -83,6 +83,32 @@
                 <img src="../AboutPageAssets/img/20-21.jpg" style="width:100%" alt="pages 20 et 21">
             </div>
             <div class="mySlides">
+                    <!-- modal liens articles -->
+                    <button id="myBtn">ouvrir pour lire les journaux</button>
+                    <div id="myModal" class="modal">
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>
+                                <h3>Lien vers les articles</h3>
+                                <ul>
+                                    <li><a href="https://www.aide-soins-domicile.ch/Publications/Magazine-ASD/PEnzf/" target="_blank">Des équipes au plus près des locataires des appartements adaptés - Magazine aide et soins à domicile- 01.2022 </a> </li>
+                                    <li><a href="https://www.calameo.com/read/0050909045e9f90e3fe60?authid=LshIzzkDP3ls" target="_blank">Solution pour nos seniors : il est temps d’y penser ! - La Région - 18.02.2022</a> </li>
+                                    <li><a href="https://www.calameo.com/read/0050909046de2f25f26e3?authid=P5MDkBtn7xxu" target="_blank">Les sirène des pompier, les élèves… et le CMS - La Région - 21.04.2022</a> </li>
+                                    <li><a href="https://www.calameo.com/read/005090904a44ec240485e?authid=jfjsL2RJRDUH" target="_blank"> Pour dire merci aux proches aidants - La Région - 28.04.2022</a> </li>
+                                    <li><a href="https://journaldesaintecroix.ch/" target="_blank">Diabète : journée de prévention - Le journal de St-Croix - 20.05.2022 </a></li>
+                                    <li><a href="https://journaldesaintecroix.ch/" target="_blank">Assemblée générale de l’ASPMAD - Le journal de St-Croix-20.05.2022 </a></li>
+                                    <li><a href="https://jd.journalcossonay.ch/" target="_blank">Volume des prestations en hausse - Journal de Cossonay - 20.05.2022 </a></li>
+                                    <li><a href="https://www.calameo.com/read/005090904943c9215efd9?authid=kGgAkOr4CFQz" target="_blank">l’ergo quoi ? - La Région - 15.06.2022</a></li>
+                                    <li><a href="https://www.calameo.com/read/005090904fd99468af4a0?authid=Yzg9slFY3jc4" target="_blank">Ce samedi, journée nationale de l’aide à domicile - La Région - 01.09.2022</a></li>
+                                    <li><a href="https://journaldesaintecroix.ch/?s=14+octobre+2022" target="_blank">Merci aux proches aidants - Journal de Ste-Croix - 14.10.2022</a> </li>
+                                    <li><a href="https://www.calameo.com/read/005090904861da238ae27?authid=w0oh4fXc7N7P" target="_blank">La santé mentale est l’affaire de tous - La Région - 20.10.2022</a> </li>
+                                    <li><a href="https://www.calameo.com/read/0050909046ef823fc9f1c?authid=Uu4vYsV2KGZb" target="_blank">Tout à coup il y a une petite lumière - La Région - 3.11.2022</a> </li>
+                                    <li><a href="https://www.calameo.com/read/0050909043f54ed455249?authid=dTOsuMddF3o6" target="_blank">Notre raison d’être : l’humain - La Région - 29.11.2022</a></li>
+                                    <li><a href="https://www.calameo.com/read/005090904787dde444638?authid=pL3k5A6LoghY" target="_blank">L’infirmier officiellement devenu directeur - La Région - 21.12.2022</a></li>
+                                </ul> 
+                            </p>
+                        </div>
+                    </div>
                 <div class="numbertext">22 et 23 / 28</div>
                 <img src="../AboutPageAssets/img/22-23.jpg" style="width:100%" alt="pages 22 et 23">
             </div>
@@ -268,6 +294,31 @@
             element.addEventListener("mouseout", function() {
             this.style.transform = "scale(1)";
             });
+         // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
     </script>
 
 </body>
